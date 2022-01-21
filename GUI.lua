@@ -448,12 +448,3 @@ Other:AddSlider({
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed=value
     end
 })
-Other:AddSlider({
-    Name="Jump power",
-    Value=50,
-    Min=50,
-    Max=1000,
-    Callback=function(value)
-        game.Players.LocalPlayer.Character.Humanoid.JumpPower=value
-    end
-})
