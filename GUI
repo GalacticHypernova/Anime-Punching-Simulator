@@ -369,6 +369,15 @@ FarmingSection:AddToggle({
         end
     end
 })
+FarmingSection:AddToggle({
+    Name="Auto rank up",
+    Callback=function(bool)
+        getgenv().settings["rank"]=bool
+        if bool then 
+            rank()
+        end
+    end
+})
 local selectedEgg
 PetSection:AddDropdown({
    Name="Egg to buy (must own world)",
