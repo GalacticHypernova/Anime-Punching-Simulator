@@ -11,7 +11,7 @@ getgenv().settings={
 }
 local rS=game:GetService("RunService")
 function codes()
-    spawn(function()
+    task.spawn(function()
         local args={
             [1]="Codes",
             [2]="Release"
@@ -21,7 +21,7 @@ function codes()
 end
 
 function practice(area)
-    spawn(function()
+    task.spawn(function()
         local CFrame=game.Players.LocalPlayer.Character.HumanoidRootPart
         while getgenv().settings["train"] and task.wait() do
             for i,v in pairs(game:GetService("Workspace")["__SETTINGS"]["__INTERACT"]:GetDescendants()) do
@@ -40,7 +40,7 @@ end
 
 
 function click()
-   spawn(function()
+   task.spawn(function()
        while getgenv().settings["click"] and task.wait() do
             local args = {
                 [1] = "Tapping"
@@ -50,7 +50,7 @@ function click()
    end)
 end
 function rebirth(rebirthAmount)
-    spawn(function()
+    task.spawn(function()
         while getgenv().settings["rebirth"] and task.wait() do
             local args = {
                 [1] = "Rebirths",
@@ -61,7 +61,7 @@ function rebirth(rebirthAmount)
     end)
 end
 function equipBest()
-    spawn(function()
+    task.spawn(function()
         while getgenv().settings["best"] and task.wait() do
             local args = {
                 [1] = "EquipBest"
@@ -71,12 +71,12 @@ function equipBest()
     end)
 end
 function removeAnim()
-    spawn(function()
+    task.spawn(function()
         game:GetService("Players").tbitw2549.PlayerGui.EggAnimation:Destroy()
     end)
 end
 function buyEgg(eggType)
-    spawn(function()
+    task.spawn(function()
         local CFrame=game.Players.LocalPlayer.Character.HumanoidRootPart
         while getgenv().settings["egg"] and task.wait() do
             for i,v in pairs(game:GetService("Workspace")["__SETTINGS"]["__INTERACT"]:GetDescendants()) do
@@ -96,7 +96,7 @@ function buyEgg(eggType)
     end)
 end
 function teleport(world2)
-    spawn(function()
+    task.spawn(function()
         local args = {
             [1] = "Areas",
             [2] = world2
@@ -105,7 +105,7 @@ function teleport(world2)
     end)
 end
 function upgrade()
-    spawn(function()
+    task.spawn(function()
         while getgenv().settings["upgrade"] and task.wait() do
             local args = {
                 [1] = "Upgrade",
@@ -114,7 +114,7 @@ function upgrade()
             game:GetService("ReplicatedStorage").Remotes.ClientRemote:InvokeServer(unpack(args))
         end
     end)
-    spawn(function()
+    task.spawn(function()
         while getgenv().settings["upgrade"] and task.wait() do
             local args = {
                 [1] = "Upgrade",
@@ -123,7 +123,7 @@ function upgrade()
             game:GetService("ReplicatedStorage").Remotes.ClientRemote:InvokeServer(unpack(args))
         end
     end)
-    spawn(function()
+    task.spawn(function()
         while getgenv().settings["upgrade"] and task.wait() do
             local args = {
                 [1] = "Upgrade",
@@ -132,7 +132,7 @@ function upgrade()
             game:GetService("ReplicatedStorage").Remotes.ClientRemote:InvokeServer(unpack(args))
         end
     end)
-    spawn(function()
+    task.spawn(function()
         while getgenv().settings["upgrade"] and task.wait() do
             local args = {
                 [1] = "Upgrade",
@@ -141,7 +141,7 @@ function upgrade()
             game:GetService("ReplicatedStorage").Remotes.ClientRemote:InvokeServer(unpack(args))
         end
     end)
-    spawn(function()
+    task.spawn(function()
         while getgenv().settings["upgrade"] and task.wait() do
             local args = {
                 [1] = "Upgrade",
@@ -152,7 +152,7 @@ function upgrade()
     end)
 end
 function rank()
-    spawn(function()
+    task.spawn(function()
         while getgenv().settings["rank"] and task.wait() do
             local args = {
                 [1] = "Ranks",
@@ -161,7 +161,7 @@ function rank()
             game:GetService("ReplicatedStorage").Remotes.ClientRemote:InvokeServer(unpack(args))
         end
     end)
-    spawn(function()
+    task.spawn(function()
         while getgenv().settings["rank"] and task.wait() do
             local args = {
                 [1] = "Ranks",
@@ -170,7 +170,7 @@ function rank()
             game:GetService("ReplicatedStorage").Remotes.ClientRemote:InvokeServer(unpack(args))
         end
     end)
-    spawn(function()
+    task.spawn(function()
         while getgenv().settings["rank"] and task.wait() do
             local args = {
                 [1] = "Ranks",
@@ -179,7 +179,7 @@ function rank()
             game:GetService("ReplicatedStorage").Remotes.ClientRemote:InvokeServer(unpack(args))
         end
     end)
-    spawn(function()
+    task.spawn(function()
         while getgenv().settings["rank"] and task.wait() do
             local args = {
                 [1] = "Ranks",
@@ -188,7 +188,7 @@ function rank()
             game:GetService("ReplicatedStorage").Remotes.ClientRemote:InvokeServer(unpack(args))
         end
     end)
-    spawn(function()
+    task.spawn(function()
         while getgenv().settings["rank"] and task.wait() do
             local args = {
                 [1] = "Ranks",
@@ -197,7 +197,7 @@ function rank()
             game:GetService("ReplicatedStorage").Remotes.ClientRemote:InvokeServer(unpack(args))
         end
     end)
-    spawn(function()
+    task.spawn(function()
         while getgenv().settings["rank"] and task.wait() do
             local args = {
                 [1] = "Ranks",
@@ -206,7 +206,7 @@ function rank()
             game:GetService("ReplicatedStorage").Remotes.ClientRemote:InvokeServer(unpack(args))
         end
     end)
-    spawn(function()
+    task.spawn(function()
         while getgenv().settings["rank"] and task.wait() do
             local args = {
                 [1] = "Ranks",
@@ -215,7 +215,7 @@ function rank()
             game:GetService("ReplicatedStorage").Remotes.ClientRemote:InvokeServer(unpack(args))
         end
     end)
-    spawn(function()
+    task.spawn(function()
         while getgenv().settings["rank"] and task.wait() do
             local args = {
                 [1] = "Ranks",
@@ -224,7 +224,7 @@ function rank()
             game:GetService("ReplicatedStorage").Remotes.ClientRemote:InvokeServer(unpack(args))
         end
     end)
-    spawn(function()
+    task.spawn(function()
         while getgenv().settings["rank"] and task.wait() do
             local args = {
                 [1] = "Ranks",
@@ -233,7 +233,7 @@ function rank()
             game:GetService("ReplicatedStorage").Remotes.ClientRemote:InvokeServer(unpack(args))
         end
     end)
-    spawn(function()
+    task.spawn(function()
         while getgenv().settings["rank"] and task.wait() do
             local args = {
                 [1] = "Ranks",
@@ -242,7 +242,7 @@ function rank()
             game:GetService("ReplicatedStorage").Remotes.ClientRemote:InvokeServer(unpack(args))
         end
     end)
-    spawn(function()
+    task.spawn(function()
         while getgenv().settings["rank"] and task.wait() do
             local args = {
                 [1] = "Ranks",
@@ -251,7 +251,7 @@ function rank()
             game:GetService("ReplicatedStorage").Remotes.ClientRemote:InvokeServer(unpack(args))
         end
     end)
-    spawn(function()
+    task.spawn(function()
         while getgenv().settings["rank"] and task.wait() do
             local args = {
                 [1] = "Ranks",
@@ -260,7 +260,7 @@ function rank()
             game:GetService("ReplicatedStorage").Remotes.ClientRemote:InvokeServer(unpack(args))
         end
     end)
-    spawn(function()
+    task.spawn(function()
         while getgenv().settings["rank"] and task.wait() do
             local args = {
                 [1] = "Ranks",
@@ -269,7 +269,7 @@ function rank()
             game:GetService("ReplicatedStorage").Remotes.ClientRemote:InvokeServer(unpack(args))
         end
     end)
-    spawn(function()
+    task.spawn(function()
         while getgenv().settings["rank"] and task.wait() do
             local args = {
                 [1] = "Ranks",
@@ -411,7 +411,7 @@ Other:AddButton({
 local selectedWorld
 Other:AddDropdown({
     Name="Teleport to world (not owned)",
-    List={"Spawn","Pirates","Slayer","Ninja","Revengers","Camp","Slime","Jujutsu","Soul"},
+    List={"task.Spawn","Pirates","Slayer","Ninja","Revengers","Camp","Slime","Jujutsu","Soul"},
     Callback=function(value)
         selectedWorld=value
         print(value)
@@ -427,7 +427,7 @@ Other:AddButton({
 local selectedWorld2
 Other:AddDropdown({
     Name="Teleport to world (owned)",
-    List={"Spawn","Pirates","Slayer","Ninja","Revengers","Camp","Slime","Jujutsu","Soul"},
+    List={"task.Spawn","Pirates","Slayer","Ninja","Revengers","Camp","Slime","Jujutsu","Soul"},
     Callback=function(value)
         selectedWorld2=value
         print(value)
