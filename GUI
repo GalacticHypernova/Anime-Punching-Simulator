@@ -9,6 +9,7 @@ getgenv().settings={
    ["rank"]=false,
    ["best"]=false
 }
+--E
 local rS=game:GetService("RunService")
 function codes()
     task.spawn(function()
