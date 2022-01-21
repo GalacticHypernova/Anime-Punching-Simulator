@@ -25,7 +25,7 @@ function practice(area)
         local CFrame=game.Players.LocalPlayer.Character.HumanoidRootPart
         while getgenv().settings["train"] and task.wait() do
             for i,v in pairs(game:GetService("Workspace")["__SETTINGS"]["__INTERACT"]:GetDescendants()) do
-                if v.ClassName=="NumberValue" and v.Value==area then
+                if v.ClassName=="StringValue" and v.Value==area then
                     CFrame.CFrame=v.Parent.CFrame
                     local args = {
                     [1] = "Practice",
@@ -327,7 +327,7 @@ Mode=   "Dynamic"
 local selectedTrain
 FarmingSection:AddDropdown({
     Name="Auto Train area (must own world)",
-    List={"Click Me","1","2"},
+    List={"Click Me","Spawn","Camp"},
     Callback=function(value)
         selectedTrain=value
         print(value)
@@ -338,7 +338,7 @@ FarmingSection:AddToggle({
     Callback=function(bool)
         getgenv().settings["train"]=bool
         if bool and selectedTrain then
-            practice(tonumber(selectedTrain))
+            practice(tostring(selectedTrain))
         end
     end
 })
@@ -420,7 +420,7 @@ Other:AddButton({
 local selectedWorld
 Other:AddDropdown({
     Name="Teleport to world (not owned)",
-    List={"task.Spawn","Pirates","Slayer","Ninja","Revengers","Camp","Slime","Jujutsu","Soul"},
+    List={"Click Me","Pirates","Slayer","Ninja","Revengers","Camp","Slime","Jujutsu","Soul"},
     Callback=function(value)
         selectedWorld=value
         print(value)
@@ -436,7 +436,7 @@ Other:AddButton({
 local selectedWorld2
 Other:AddDropdown({
     Name="Teleport to world (owned)",
-    List={"task.Spawn","Pirates","Slayer","Ninja","Revengers","Camp","Slime","Jujutsu","Soul"},
+    List={"Click Me","Pirates","Slayer","Ninja","Revengers","Camp","Slime","Jujutsu","Soul"},
     Callback=function(value)
         selectedWorld2=value
         print(value)
