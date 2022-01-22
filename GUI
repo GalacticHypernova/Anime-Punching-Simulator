@@ -9,7 +9,6 @@ getgenv().settings={
    ["rank"]=false,
    ["best"]=false
 }
---E
 local rS=game:GetService("RunService")
 function codes()
     task.spawn(function()
@@ -38,7 +37,11 @@ function practice(area)
         end
     end)
 end
-
+function popup()
+    spawn(function()
+        game:GetService("Players").tbitw2549.PlayerGui.Ui.CenterFrame.Error:Destroy()
+    end)
+end
 
 function click()
    task.spawn(function()
@@ -343,6 +346,12 @@ FarmingSection:AddToggle({
         end
     end
 })
+FarmingSection:AddButton({
+    Name="Disable popups (recommended)",
+    Callback=function()
+        popup()
+    end
+})
 local selectedRebirth
 FarmingSection:AddDropdown({
     Name="Amount to rebirth",
@@ -449,6 +458,7 @@ Other:AddButton({
         teleport(selectedWorld2)
     end
 })
+
 Other:AddSlider({
     Name="Walkspeed",
     Value=16,
